@@ -72,12 +72,14 @@ document.querySelectorAll("#feelings button").forEach((button) => {
           button.dataset.selected = "false";
           selectedObject.dataset.selected = "false";
         } else {
-          selectedObject.dataset.selected = "false";
-          button.dataset.turned = "false";
-          selectedObject.innerHTML = "❓";
-          button.dataset.selected = "false";
-          button.dataset.turned = "false";
-          button.innerHTML = "❓";
+          setTimeout(() => {
+            selectedObject.dataset.selected = "false";
+            selectedObject.dataset.turned = "false";
+            selectedObject.innerHTML = "❓";
+            button.dataset.selected = "false";
+            button.dataset.turned = "false";
+            button.innerHTML = "❓";
+          }, 1000);
         }
       }
     }
@@ -103,7 +105,7 @@ document.querySelectorAll("#objects button").forEach((button) => {
         } else {
           setTimeout(() => {
             selectedFeeling.dataset.selected = "false";
-            button.dataset.turned = "false";
+            selectedFeeling.dataset.turned = "false";
             selectedFeeling.innerHTML = "❓";
             button.dataset.selected = "false";
             button.dataset.turned = "false";
