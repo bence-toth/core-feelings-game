@@ -1,0 +1,22 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#feelings,
+#objects {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+button {
+  width: 50dvw;
+  height: 20dvh;
+  font-size: 10vmin;
+}
